@@ -1,7 +1,7 @@
 # Banking System (CLI)
 
 This project is a simple **command-line banking system** developed in Python.
-It was created as a learning project to practice **core Python concepts** such as object-oriented programming, file handling, and basic security practices.
+User data files are created **automatically at runtime** when the application is executed.
 
 ## Features
 
@@ -10,7 +10,7 @@ It was created as a learning project to practice **core Python concepts** such a
 * Deposit and withdrawal operations
 * Balance tracking
 * Account activation and closure
-* File-based data persistence
+* File-based persistence
 * Transaction logging with timestamps
 
 ## Technologies & Concepts Used
@@ -20,18 +20,28 @@ It was created as a learning project to practice **core Python concepts** such a
 * File I/O operations
 * Password hashing (`hashlib`)
 * Date and time handling (`datetime`)
+* Decimal usage for monetary values
 * Basic input validation
+
+## Concepts Demonstrated
+
+* Object-oriented design with multiple classes
+* Secure handling of user passwords
+* Monetary calculations handled safely
+* Simple persistence using text files instead of a database
 
 ## Project Structure
 
 ```
 .
 ├── main.py
-├── accounts.txt
-├── transactions.txt
 ├── README.md
 └── LICENSE
 ```
+
+> Note:
+> `accounts.txt` and `transactions.txt` are **not included** in the repository.
+> These files are created automatically when the program runs.
 
 ## How to Run
 
@@ -43,11 +53,7 @@ It was created as a learning project to practice **core Python concepts** such a
 python main.py
 ```
 
-## Notes
-
-* This project uses **text files** instead of a database for simplicity.
-* No graphical interface or API is included.
-* The focus is on core Python fundamentals rather than production-level architecture.
+Then follow the menu options in the terminal.
 
 ## Limitations
 
@@ -55,7 +61,7 @@ python main.py
 * No database integration
 * CLI-based interaction only
 
-These limitations are intentional, as the project is meant to demonstrate foundational Python skills.
+These limitations are intentional, as the project focuses on demonstrating **core Python fundamentals** rather than production-level architecture.
 
 ## License
 
